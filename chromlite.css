@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chromelite Technologies</title>
+    <link rel="stylesheet" href="chromelite.css">
+</head>
+
+<body>
+
+<header>
+    <img src="chromelite-logo.png" alt="Chromelite Logo"
+         style="width:180px;">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+    </nav>
+</header>
+
+<section class="welcome">
+    <h1>Welcome to Chromelite Technologies Limited</h1>
+    <p>Your trusted technology and digital solutions provider.</p>
+</section>
+
+<section class="about">
+    <h2>Why Choose Chromelite?</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>Computers</h3>
+            <p>We provide quality computers suitable for business, education and personal use.</p>
+        </div>
+
+        <div class="card">
+            <h3>Printers</h3>
+            <p>We offer reliable printing equipment for offices and organisations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking</h3>
+            <p>We provide networking equipment for fast and reliable connectivity.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>Chromelite Technologies Limited</h3>
+    <p>Grand City Complex, Naalya, Kampala</p>
+    <p>Phone: +256 700 000000</p>
+    <p>Email: info@chromelite.com</p>
+    <p>Copyright &copy; 2026 Chromelite Technologies</p>
+</footer>
+
+</body>
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #003153;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FF6600;
+}
+
+.welcome {
+    background: #003153;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome h1 {
+    margin-bottom: 15px;
+}
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #003153;
+    margin-bottom: 25px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    width: 30%;
+    background: #f5f5f5;
+}
+
+.card h3 {
+    color: #003153;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+footer {
+    background: #003153;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+@media (max-width: 650px) {
+    .products {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

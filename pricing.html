@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chromelite Technologies</title>
+    <link rel="stylesheet" href="chromelite.css">
+</head>
+
+<body>
+
+<header>
+    <img src="chromelite-logo.png" alt="Chromelite Logo"
+         style="width:180px;">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+    </nav>
+</header>
+
+<section class="welcome">
+    <h1>Welcome to Chromelite Technologies Limited</h1>
+    <p>Your trusted technology and digital solutions provider.</p>
+</section>
+
+<section class="about">
+    <h2>Why Choose Chromelite?</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>Computers</h3>
+            <p>We provide quality computers suitable for business, education and personal use.</p>
+        </div>
+
+        <div class="card">
+            <h3>Printers</h3>
+            <p>We offer reliable printing equipment for offices and organisations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking</h3>
+            <p>We provide networking equipment for fast and reliable connectivity.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>Chromelite Technologies Limited</h3>
+    <p>Grand City Complex, Naalya, Kampala</p>
+    <p>Phone: +256 700 000000</p>
+    <p>Email: info@chromelite.com</p>
+    <p>Copyright &copy; 2026 Chromelite Technologies</p>
+</footer>
+
+</body>
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #003153;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FF6600;
+}
+
+.welcome {
+    background: #003153;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome h1 {
+    margin-bottom: 15px;
+}
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #003153;
+    margin-bottom: 25px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    width: 30%;
+    background: #f5f5f5;
+}
+
+.card h3 {
+    color: #003153;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+footer {
+    background: #003153;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+@media (max-width: 650px) {
+    .products {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chromelite Pricing Schedule</title>
+
+    <link rel="stylesheet" href="chromelite.css">
+
+    <style>
+        @media print {
+            nav, header img {
+                display: none;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+        }
+
+        .pricing {
+            padding: 30px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+        }
+
+        th {
+            background: #003153;
+            color: white;
+        }
+
+        .total {
+            font-weight: bold;
+            background: #FF6600;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="chromelite-logo.png" alt="Chromelite Logo"
+         style="width:180px;">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+    </nav>
+</header>
+
+<section class="pricing">
+
+    <h1>Chromelite Pricing Schedule</h1>
+
+    <p>Our Products and Prices</p>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Item No.</th>
+                <th>Category</th>
+                <th>Product Description</th>
+                <th>Unit Price (UGX)</th>
+                <th>Qty</th>
+                <th>Total (UGX)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- BRANDED STATIONERY -->
+
+            <tr>
+                <td>1</td>
+                <td rowspan="3">Branded Stationery</td>
+                <td>Branded Notebooks</td>
+                <td>120,000</td>
+                <td>2</td>
+                <td>240,000</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Branded Pens</td>
+                <td>85,000</td>
+                <td>3</td>
+                <td>255,000</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Office Diaries</td>
+                <td>60,000</td>
+                <td>2</td>
+                <td>120,000</td>
+            </tr>
+
+            <!-- EVENT MATERIALS -->
+
+            <tr>
+                <td>4</td>
+                <td rowspan="3">Event Materials</td>
+                <td>Promotional Banners</td>
+                <td>180,000</td>
+                <td>2</td>
+                <td>360,000</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Event Badges</td>
+                <td>25,000</td>
+                <td>10</td>
+                <td>250,000</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Event Backdrop</td>
+                <td>300,000</td>
+                <td>1</td>
+                <td>300,000</td>
+            </tr>
+
+            <!-- BRANDED APPAREL -->
+
+            <tr>
+                <td>7</td>
+                <td rowspan="3">Branded Apparel</td>
+                <td>Branded Polo Shirts</td>
+                <td>45,000</td>
+                <td>5</td>
+                <td>225,000</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Branded T-Shirts</td>
+                <td>35,000</td>
+                <td>4</td>
+                <td>140,000</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Branded Caps</td>
+                <td>30,000</td>
+                <td>2</td>
+                <td>60,000</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <td colspan="5">Subtotal</td>
+                <td>1,950,000</td>
+            </tr>
+
+            <tr>
+                <td colspan="5">VAT (18%)</td>
+                <td>351,000</td>
+            </tr>
+
+            <tr class="total">
+                <td colspan="5">Grand Total</td>
+                <td>2,301,000</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>Chromelite Technologies Limited</p>
+    <p>Grand City Complex, Naalya, Kampala</p>
+    <p>Phone: +256 700 000000</p>
+    <p>Email: info@chromelite.com</p>
+    <p>Copyright &copy; 2026 Chromelite Technologies</p>
+</footer>
+
+</body>
+</html>
